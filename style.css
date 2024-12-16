@@ -1,0 +1,151 @@
+/* 모든 요소의 기본 여백 제거 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* HTML과 Body의 기본 설정 */
+html, body {
+height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF0F0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 1px 1px 20px 5px #FF9696;
+}
+
+/* display 영역 */
+.display {
+    height: 70px;
+    background-color: white;
+    border: 2px solid #FF9696;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: black;
+    text-align: right;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 30px;
+}
+
+/* buttons 영역 */
+.buttons {
+    width: 250px;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.function {
+    background-color: #FFBEBE;
+    color: white;
+}
+
+.function:hover {
+    background-color: #FF9696;
+    color: #FFBEBE;
+}
+
+.operator {
+    background-color: #FF9696;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #F56E6E;
+    color: #FF9696;
+}
+
+.number {
+    background-color: 	#FFE6E6;
+    color: white;
+}
+
+.number:hover {
+    background-color: #FFC8C8;
+    color: #FFE6E6;
+}
+
+.zero {
+    width: 50%;
+}
+
+/* 신호등 버튼 */
+.blinker {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+
+.blinker > button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.red {
+    background-color: #FF848F;
+    color: #FF848F;
+}
+
+.red:hover {
+    color: black;
+}
+
+.orange {
+    background-color: #FFE146;
+    color: #FFE146;
+}
+
+.orange:hover {
+    color: black;
+}
+
+.green {
+    background-color: #78EFAD;
+    color: #78EFAD;
+}
+
+.green:hover {
+    color: black;
+}
